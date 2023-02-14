@@ -1,0 +1,13 @@
+// initializing Containers Sizes
+@each $query, $value in $container-sizes {
+  .container-#{$query} {
+    @include container-gap;
+    max-width: $value;
+  }
+
+  .container {
+    @include breakpoint($query) {
+      max-width: $value;
+    }
+  }
+}

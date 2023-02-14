@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-inline: calc(-1 * $padding-inline-container);
+}
+
+.col {
+  flex: 1 0 auto;
+  max-width: 100%;
+}
+
+// initializing cols
+
+@mixin create-selector($breakpoint: null) {
+  $infix: if($breakpoint == null, "", "-#{$breakpoint}");
+
+  @for $i from 1 through $columns {
+    $width: calc(((100% / $columns) * $i));
+
+    .col#{$infix}-#{$i} {
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+}
+
+@include create-selector;
+
+@each $prop in $query {
+  @include breakpoint($prop) {
+    @include create-selector($prop);
+  }
+}

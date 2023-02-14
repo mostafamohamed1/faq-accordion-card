@@ -1,0 +1,33 @@
+@use "sass:map";
+
+@mixin container-gap {
+  padding-inline: $padding-inline-container;
+  margin-inline: auto;
+}
+
+// Media Query
+@mixin breakpoint($query) {
+  @if $query == "sm" {
+    @media (min-width: map.get($media-query, sm)) {
+      @content;
+    }
+  }
+
+  @if $query == "md" {
+    @media (min-width: map.get($media-query, md)) {
+      @content;
+    }
+  }
+
+  @if $query == "lg" {
+    @media (min-width: map.get($media-query, lg)) {
+      @content;
+    }
+  }
+
+  @if $query == "xl" {
+    @media (min-width: map.get($media-query, xl)) {
+      @content;
+    }
+  }
+}

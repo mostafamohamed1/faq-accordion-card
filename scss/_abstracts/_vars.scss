@@ -1,0 +1,38 @@
+// Font
+$font: "Kumbh Sans", sans-serif;
+$font-size: 75%;
+
+// Media Query
+$container-sizes: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+
+$media-query: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+//
+$query: ("sm", "md", "lg", "xl");
+
+// Columns
+$columns: 12;
+
+// Colos
+$clr-blue-900: hsl(238, 29%, 16%);
+$clr-red-300: hsl(14, 88%, 65%);
+
+$clr-violet-700: hsl(273, 75%, 66%);
+$clr-blue-700: hsl(240, 73%, 65%);
+
+$clr-blue-200: hsl(240, 5%, 91%);
+$clr-blue-500: hsl(240, 6%, 50%);
+$clr-blue-900: hsl(237, 12%, 33%);
+
+// Gaps
+$padding-inline-container: 1.3rem;
