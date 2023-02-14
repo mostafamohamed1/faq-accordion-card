@@ -1,10 +1,5 @@
 @use "sass:map";
 
-@mixin container-gap {
-  padding-inline: $padding-inline-container;
-  margin-inline: auto;
-}
-
 // Media Query
 @mixin breakpoint($query) {
   @if $query == "sm" {

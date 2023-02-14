@@ -19,5 +19,5 @@ body {
 }
 
 .container {
-  @include container-gap;
+  @extend %gap-container;
 }
