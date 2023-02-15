@@ -1,0 +1,59 @@
+.accordion {
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    $padding-block: 0.4rem;
+    $font-size: 1em;
+
+    padding-block: $padding-block;
+    border-bottom: 1px solid $clr-blue-200;
+
+    &--header {
+      font-size: $font-size;
+    }
+
+    &--btn {
+      all: unset;
+      padding-block: $padding-block;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      font-size: inherit;
+      font-weight: 400;
+      color: $clr-blue-900;
+      transition: color 0.3s ease-in, font-weight 0.3s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        color: $clr-red-300;
+      }
+    }
+
+    &.show &--btn {
+      color: $clr-blue-900;
+      font-weight: 700;
+    }
+
+    &--icon {
+      display: inline-block;
+      width: max-content;
+      height: max-content;
+      margin-left: auto;
+    }
+
+    &--content {
+      transition: 0.3s ease-in;
+      height: 0;
+      overflow: hidden;
+    }
+
+    &--text {
+      color: $clr-blue-900;
+      font-size: $font-size;
+      transition: height 0.3s ease-in;
+      padding-block: $padding-block;
+    }
+  }
+}

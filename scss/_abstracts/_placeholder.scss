@@ -2,3 +2,9 @@
   padding-inline: $padding-inline-container;
   margin-inline: auto;
 }
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

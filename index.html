@@ -17,13 +17,41 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <section class="faq">
+    <section>
       <div class="container">
-        <main>
-          <div class="col-lg-6 faq__images"></div>
-          <div class="col-lg-6 accordion">
+        <main class="row faq">
+          <div class="col-12 col-lg-6 image p-block-2">
+            <img src="images/illustration-box-desktop.svg" alt="Box" class="image__box" />
+            <div class="image__res">
+              <picture>
+                <source
+                  srcset="./images/bg-pattern-desktop.svg"
+                  media="(min-width: 992px)"
+                />
+                <img
+                  src="./images/bg-pattern-mobile.svg"
+                  alt="Pattern"
+                  class="image__pattern"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="./images/illustration-woman-online-desktop.svg"
+                  media="(min-width: 992px)"
+                />
+                <img
+                  src="./images/illustration-woman-online-mobile.svg"
+                  alt="Woman"
+                  class="image__woman"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 accordion p-2">
             <h1 class="accordion__heading heading--primary">faq</h1>
             <ul class="accordion__list">
               <li class="accordion__item">
@@ -37,10 +65,7 @@
                     />
                   </button>
                 </h2>
-                <div
-                  class="accordion__item--content accordion__item--collapse"
-                  aria-labelledby="headingOne"
-                >
+                <div class="accordion__item--content" aria-labelledby="headingOne">
                   <p class="accordion__item--text">
                     You can invite up to 2 additional users on the Free plan. There is no
                     limit on team members for the Premium plan.
@@ -59,10 +84,7 @@
                     />
                   </button>
                 </h2>
-                <div
-                  class="accordion__item--content accordion__item--collapse"
-                  aria-labelledby="headingTwo"
-                >
+                <div class="accordion__item--content" aria-labelledby="headingTwo">
                   <p class="accordion__item--text">
                     No more than 2GB. All files in your account must fit your allotted
                     storage space.
@@ -81,10 +103,7 @@
                     />
                   </button>
                 </h2>
-                <div
-                  class="accordion__item--content accordion__item--collapse"
-                  aria-labelledby="headingThree"
-                >
+                <div class="accordion__item--content" aria-labelledby="headingThree">
                   <p class="accordion__item--text">
                     Click “Forgot password” from the login page or “Change password” from
                     your profile page. A reset link will be emailed to you.
@@ -103,10 +122,7 @@
                     />
                   </button>
                 </h2>
-                <div
-                  class="accordion__item--content accordion__item--collapse"
-                  aria-labelledby="headingThree"
-                >
+                <div class="accordion__item--content" aria-labelledby="headingThree">
                   <p class="accordion__item--text">
                     Yes! Send us a message and we’ll process your request no questions
                     asked.
@@ -125,10 +141,7 @@
                     />
                   </button>
                 </h2>
-                <div
-                  class="accordion__item--content accordion__item--collapse"
-                  aria-labelledby="headingThree"
-                >
+                <div class="accordion__item--content" aria-labelledby="headingThree">
                   <p class="accordion__item--text">
                     Chat and email support is available 24/7. Phone lines are open during
                     normal business hours.
